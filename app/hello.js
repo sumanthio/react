@@ -1,10 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Hello extends Component {
+export default class Hello extends React.Component {
+
   render() {
     return (
-      // Add your component markup and other subcomponent references here.
-      <h1>Hello, World!</h1>
+      <div>
+      <h1>Hello {this.props.name}!</h1>
+      </div>
     );
   }
 }
